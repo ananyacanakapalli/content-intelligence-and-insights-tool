@@ -1,24 +1,45 @@
-# Virtual environment
-venv/
-
-# Python cache
+# ------------------------------
+# Python
+# ------------------------------
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
 *.pyc
+*.swp
+*.swo
+*.sqlite3
 
-# OS files
-.DS_Store
+# ------------------------------
+# Virtual Environment
+# ------------------------------
+venv/
+.env
+.env.*
 
-# Notebooks
+# ------------------------------
+# Jupyter Notebook checkpoints
+# ------------------------------
 .ipynb_checkpoints/
 
-# Streamlit
-.streamlit/
+# ------------------------------
+# macOS files
+# ------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Environment variables
-.env
+# ------------------------------
+# Logs and temporary files
+# ------------------------------
+*.log
+*.tmp
+*.bak
+*.orig
 
-# Data files (we’ll control what to commit later)
+# ------------------------------
+# Data files (optional)
+# Only include if you want to keep small sample data in repo
+# ------------------------------
+data/*.dat
 data/*.csv
-
-# Database / temp files
-*.db
